@@ -1,0 +1,227 @@
+
+
+.my-portfolio-container {
+  min-height: 100vh;
+  background: #bbbab8;
+}
+
+.portfolio-top-nav {
+  background: #960a0a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-top-nav .logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -1px;
+  font-family: Fraunces;
+}
+
+.portfolio-content {
+  padding: 3rem 2rem;
+}
+
+.portfolio-header {
+  max-width: 1400px;
+  margin: 0 auto 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: Libre Bodoni;
+  font-style: italic;
+}
+
+.portfolio-header h1 {
+  font-size: 2.5rem;
+  color: #2d3748;
+}
+
+.portfolio-header p {
+  color: #2d3748;
+  font-size: 1.1rem;
+}
+
+.upload-toggle-button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Libre Basckerville;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.upload-toggle-button:hover {
+  background: #960a0a;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.message {
+  max-width: 1400px;
+  margin: 0 auto 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-family: Libre Bostone;
+}
+
+.message.success {
+  background: #caf5d9;
+  color: #296345;
+}
+
+.message.error {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.upload-form-container {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.upload-form-container h2 {
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  font-family: Libre Bodoni;
+  font-style: italic;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.upload-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.upload-form label {
+  color: #4a5568;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: Libre Baskerville;
+}
+
+.upload-form input[type="text"],
+.upload-form input[type="file"],
+.upload-form textarea,
+.upload-form select {
+  padding: 0.9rem;
+  border: 2px solid #c6cbd2;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: Franceus;
+}
+
+.upload-form input:focus,
+.upload-form textarea:focus,
+.upload-form select:focus {
+  outline: none;
+  border-color: #960a0a;
+}
+
+.upload-button {
+  background: #960a0a;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: Libre Basckerville;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.upload-button:hover:not(:disabled) {
+  background: #b70d0d;
+}
+
+.upload-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.my-photos-section {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.my-photos-section h2 {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 2rem;
+  font-family: Libre Baskerville;
+}
+
+.no-photos {
+  text-align: center;
+  padding: 4rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.no-photos p {
+  color: #718096;
+  font-size: 1.2rem;
+  font-family: Libre Baskerville;
+  margin-bottom: 2rem;
+}
+
+.start-upload-button {
+  background: #960a0a;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Libre Basckerville;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.start-upload-button:hover {
+  background: #c53030;
+  transform: translateY(-2px);
+}
+
+.photo-date {
+  color: #838e9d;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  font-family: Libre Baskerville;
+}
+
+@media (max-width: 768px) {
+  .portfolio-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portfolio-header h1 {
+    font-size: 2rem;
+  }
+}

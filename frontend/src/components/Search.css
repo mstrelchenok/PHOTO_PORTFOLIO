@@ -1,0 +1,246 @@
+/* frontend/src/components/Search.css */
+
+.search-container {
+  min-height: calc(100vh - 70px);
+  padding: 0;
+  background: #bbbab8;
+}
+
+.search-top-nav {
+  background: #960a0a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-top-nav .logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight:550;
+  font-family: Fraunces;
+  text-decoration: none;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.top-nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.top-nav-links a,
+.top-nav-links button {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: Libre Basckerville;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: opacity 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.top-nav-links a:hover,
+.top-nav-links button:hover {
+  opacity: 0.7;
+}
+
+.top-nav-links a.active {
+  border-bottom: 2px solid white;
+  padding-bottom: 4px;
+}
+
+.logout-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 60px;
+  font-weight: 600;
+  width: 130px;
+  height: 50px;
+}
+
+.logout-btn:hover {
+  background: #787878;
+}
+
+.search-header {
+  text-align: center;
+  margin: 3rem 0;
+  padding: 0 2rem;
+}
+
+.search-header h1 {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  font-family: Libre Bodoni;
+  font-style: italic;
+}
+
+.search-header p {
+  color: black;
+  font-size: 1.1rem;
+  font-family: Libre Baskerville;
+}
+
+.search-controls {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.search-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  gap: 0.5rem;
+  font-family: Libre Basckerville;
+}
+
+.search-input {
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: Libre Basckerville;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #960a0a;
+}
+
+.search-button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: Libre Basckerville;
+  font-size: 1rem;
+}
+
+.search-button:hover {
+  background: #960a0a;
+  color: white
+}
+
+.category-select {
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  min-width: 200px;
+  font-family: Libre Basckerville;
+  font-weight: 600;
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: #960a0a;
+}
+
+.photos-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.photo-card {
+  background: white;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.photo-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.photo-info {
+  padding: 1.5rem;
+}
+
+.photo-info h3 {
+  font-size: 1.3rem;
+  color: black;
+  margin-bottom: 0.5rem;
+  font-family: Libre Bodoni;
+  font-style: italic;
+}
+
+.photo-author {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  font-family: Libre Basckerville;
+}
+
+.photo-category {
+  display: inline-block;
+  background: #960a0a;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+  font-family: Libre Basckerville;
+  font-weight: 800;
+}
+
+.photo-description {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 0.75rem;
+  font-family: Libre Basckerville;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: black;
+  font-size: 1.2rem;
+  font-family: Libre Basckerville;
+}
+
+.no-results {
+  text-align: center;
+  padding: 4rem;
+  color: black;
+  font-size: 1.1rem;
+  font-family: Libre Basckerville;
+}
+
+@media (max-width: 768px) {
+  .search-controls {
+    flex-direction: column;
+  }
+
+  .photos-grid {
+    grid-template-columns: 1fr;
+  }
+}

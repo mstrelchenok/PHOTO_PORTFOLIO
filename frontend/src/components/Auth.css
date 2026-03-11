@@ -1,0 +1,137 @@
+
+
+.auth-container {
+  min-height: calc(100vh - 70px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/backgroundLogin.jpg');
+  padding: 2rem;
+
+  width: 100%;
+  min-height: 100vh; 
+}
+
+.auth-box {
+  background: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 450px;
+}
+
+.auth-title {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-family: Libre Bodoni;
+  font-style: italic;
+}
+
+.auth-subtitle {
+  color: #718096;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-family: Libre Baskerville;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #4a5568;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: Libre Baskerville;
+}
+
+.form-group input {
+  padding: 0.9rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Fraunces';
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #960a0a;
+}
+
+.auth-button {
+  background: #960a0a;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: Libre Basckerville;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 1rem;
+}
+
+.auth-button:hover:not(:disabled) {
+  background: #c53030;
+  transform: translateY(-2px);
+}
+
+.auth-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #718096;
+  font-family: Libre Baskerville;
+}
+
+.auth-switch a {
+  color: #960a0a;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Libre Basckerville;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+.demo-hint {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #edf2f7;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-family: "Fraunces";
+  color: #4a5568;
+}
+
+.error-message {
+  background-color: #fed7d7;
+  color: #c53030;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
